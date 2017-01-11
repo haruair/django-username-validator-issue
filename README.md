@@ -2,7 +2,7 @@
 
 ## Goal
 
-Replace User's username validator from django.auth.models.
+Replace User's username validator from django.contrib.auth.models.
 
 ## Document
 
