@@ -13,7 +13,11 @@ description.
 
 `username_validator` is still referred to original validator ([UnicodeUsernameValidator](https://github.com/django/django/blob/master/django/contrib/auth/validators.py)).
 
-## Way I did
+## Reason?
+
+Is `username_validator` already assigned before hit the new validator? check [django.contrib.auth.models](https://github.com/django/django/blob/master/django/contrib/auth/models.py#L313).
+
+## What I did
 
 ```
 (venv) $ pip install -r requirements.txt
@@ -23,8 +27,3 @@ description.
 ```
 
 Then access to [admin backend](http://localhost:8000/admin), create a user.
-
-## Reason?
-
-Is `username_validator` already assigned before hit the new validator? check [django.contrib.auth.models](https://github.com/django/django/blob/master/django/contrib/auth/models.py#L313).
-
